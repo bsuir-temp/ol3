@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#3700B3</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#0396DA</color>
+
+    <color name="background">#222</color>
+    <color name="someItem">#555</color>
+
+    <color name="textColor">#fff</color>
+    <color name="hintColor">#ccc</color>
+
+
+    <color name="success">#388E3C</color>
+    <color name="danger">#D32F2F</color>
+
+    <color name="someItemDefault">#666</color>
+    <color name="someItemSelected">#444</color>
+    <color name="someItemUnSelected">#666</color>
+
+</resources>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_centerInParent="true"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="5"
+        >
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="4"
+            android:layout_height="50sp"
+            android:textColor="@color/textColor"
+            android:text="@string/correct_answers"
+            android:gravity="center_vertical"
+            android:paddingStart="15dp"
+            />
+        <TextView
+            android:id="@+id/correct"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:background="@drawable/button_background_success"
+            android:textColor="@color/textColor"
+            android:text="0"
+            android:gravity="center"
+            android:layout_margin="5dp"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:weightSum="5"
+        >
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="4"
+            android:layout_height="50sp"
+            android:textColor="@color/textColor"
+            android:text="@string/incorrect_answers"
+            android:gravity="center_vertical"
+            android:paddingStart="15dp"
+            />
+        <TextView
+            android:id="@+id/incorrect"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:background="@drawable/button_background_danger"
+            android:textColor="@color/textColor"
+            android:text="0"
+            android:gravity="center"
+            android:layout_margin="5dp"
+            />
+    </LinearLayout>
+</LinearLayout>
+
+    <Button
+        android:id="@+id/close_btn"
+        android:background="@drawable/button_background_success"
+        style="@style/Button"
+        android:text="@string/close"
+        android:textColor="@color/textColor"
+        android:layout_marginBottom="35dp"
+        android:layout_centerInParent="true"
+        android:layout_alignParentBottom="true"
+        android:layout_width="300dp"
+        android:layout_height="60dp"/>
+
+</RelativeLayout>

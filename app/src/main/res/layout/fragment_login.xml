@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/background"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <com.bsuir.oitip.lab3.view.LoadingView
+        android:id="@+id/loading_frame"
+        android:visibility="gone"
+        android:layout_centerInParent="true"
+        android:layout_width="36dp"
+        android:layout_height="36dp"/>
+
+    <RelativeLayout
+        android:id="@+id/login_frame"
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_centerVertical="true"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/field_email"
+            android:background="@drawable/button_background_unpressed"
+            android:layout_width="match_parent"
+            android:hint="@string/email"
+            android:paddingStart="15dp"
+            android:paddingEnd="15dp"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/textColor"
+            android:textColorHint="@color/hintColor"
+            android:layout_height="60dp"/>
+        <EditText
+            android:id="@+id/field_password"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/button_background_unpressed"
+            android:textColor="@color/textColor"
+            android:hint="@string/password"
+            android:paddingStart="15dp"
+            android:paddingEnd="15dp"
+            android:inputType="textPassword"
+            android:textColorHint="@color/hintColor"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/login_button"
+        android:background="@drawable/button_background"
+        style="@style/Button"
+        android:text="@string/login"
+        android:textColor="@color/textColor"
+        android:layout_marginBottom="35dp"
+        android:layout_centerInParent="true"
+        android:layout_alignParentBottom="true"
+        android:layout_width="300dp"
+        android:layout_height="60dp"/>
+    </RelativeLayout>
+</RelativeLayout>
